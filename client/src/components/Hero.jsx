@@ -12,20 +12,20 @@ const Hero = () => {
 
                 <div>
                     <div className='flex items-center gap-2'>
-                       <img src={assets.calendarIcon} alt="" className='h-4' /> 
+                        <img src={assets.calendarIcon} alt="" className='h-4' />
                         <label htmlFor="destinationInput">Destination</label>
                     </div>
                     <input list='destinations' id="destinationInput" type="text" className=" rounded border border-gray-200 px-3 py-1.5 mt-1.5 text-sm outline-none" placeholder="Type here" required />
-                <datalist id='destinations'>
-{cities.map((city, index) => ( 
-    <option value={city} key={index}/>
-))}
-                </datalist>
+                    <datalist id='destinations'>
+                        {cities.map((city, index) => (
+                            <option value={city} key={index} />
+                        ))}
+                    </datalist>
                 </div>
 
                 <div>
                     <div className='flex items-center gap-2'>
-                       <img src={assets.calendarIcon} alt="" className='h-4' /> 
+                        <img src={assets.calendarIcon} alt="" className='h-4' />
                         <label htmlFor="checkIn">Check in</label>
                     </div>
                     <input id="checkIn" type="date" className=" rounded border border-gray-200 px-3 py-1.5 mt-1.5 text-sm outline-none" />
